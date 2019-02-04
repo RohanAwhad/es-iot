@@ -36,7 +36,8 @@ def turn_on(red, green, yellow):
 	GPIO.output(yellow, GPIO.HIGH)
 	time.sleep(5)
 	GPIO.output(yellow, GPIO.LOW)
+	GPIO.output(red, GPIO.HIGH)
 	
 while True:
 	for i in range(4):
-		turn_on(pins[i])
+		turn_on(pins[0][i], pins[1][i], pins[2][i])

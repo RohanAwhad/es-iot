@@ -31,10 +31,10 @@ pins.append(yellow_pin)
 def turn_on(red, green, yellow):
 	GPIO.output(red, GPIO.LOW)
 	GPIO.output(green, GPIO.HIGH)
-	time.sleep(20)
+	time.sleep(5)
 	GPIO.output(green, GPIO.LOW)
 	GPIO.output(yellow, GPIO.HIGH)
-	time.sleep(5)
+	time.sleep(2)
 	GPIO.output(yellow, GPIO.LOW)
 	GPIO.output(red, GPIO.HIGH)
 	
